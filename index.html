@@ -8,25 +8,24 @@
       border-collapse: collapse;
     }
     td {
-      width: 200px;
-      height: 200px;
-      padding: 0;
-      /*border: 1px solid #ccc;*/
-    }
-    .image-container {
-      width: 200px;
-      height: 200px;
-      overflow: hidden;
-    }
-    .image-container img {
-      width: 200%;
-      height: 200%;
-      object-fit: cover; /* ensures cropping while keeping image centered */
-      object-position: center;
-    }
-    .center {
-      object-position: center;
-    }
+    width: 200px;
+    height: 200px;
+    padding: 0;
+  }
+  .image-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  .image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%);
+  }
   </style>
 </head>
 <body>
