@@ -8,14 +8,14 @@
       border-collapse: collapse;
     }
     td {
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       padding: 0;
       /*border: 1px solid #ccc;*/
     }
     .image-container {
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       overflow: hidden;
     }
     .image-container img {
@@ -24,11 +24,15 @@
       object-fit: cover; /* ensures cropping while keeping image centered */
       object-position: center;
     }
+    .center {
+      object-position: center;
+    }
   </style>
 </head>
 <body>
 
-  <table style="width:500px; height:500px;">
+  <div class="center">
+  <table style="width:750px; height:750px;">
     <tr>
       <td><div class="image-container"><a href="index.html"><img src="white.png" onmouseover="this.src='Lgray.png'" onmouseout="this.src='white.png'"></div></td>
       <td><div class="image-container"><a href="index.html"><img src="white.png" onmouseover="this.src='Lgray.png'" onmouseout="this.src='white.png'"></div></td>
@@ -53,6 +57,7 @@
       <td><div class="image-container"><a href="index.html"><img src="white.png" onmouseover="this.src='Lgray.png'" onmouseout="this.src='white.png'"></div></td>
       <td><div class="image-container"><a href="index.html"><img src="white.png" onmouseover="this.src='Lgray.png'" onmouseout="this.src='white.png'"></div></td>
     </tr>
+    </div>
 
   
 </body>
