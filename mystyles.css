@@ -20,6 +20,9 @@ table {
     height: 90%;
     transform: translate(-50%, -50%);
   }
+ img:hover {
+       opacity:0.2;
+ }
   .center {
     	object-position:center;
   }
