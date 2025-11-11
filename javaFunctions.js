@@ -5,7 +5,7 @@ const imageOptions = [
 ];
 
 // Store current image index per cell
-const cellStates = {};
+const cellStates[20];
 
 document.addEventListener("DOMContentLoaded", () => {
   const tableCells = document.querySelectorAll("td img");
